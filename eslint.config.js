@@ -42,6 +42,7 @@ export default [
       },
       globals: {
         React: true,
+        JSX: true,
         ...globals.browser,
         it: 'readonly',
         expect: 'readonly',
