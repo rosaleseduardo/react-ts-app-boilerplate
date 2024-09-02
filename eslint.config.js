@@ -41,6 +41,7 @@ export default [
         project: './tsconfig.eslint.json',
       },
       globals: {
+        React: true,
         ...globals.browser,
         it: 'readonly',
         expect: 'readonly',
