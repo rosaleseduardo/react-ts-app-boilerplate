@@ -26,24 +26,25 @@ include this configuration
   "workbench.statusBar.visible": true,
   "editor.formatOnSave": true,
   "editor.rulers": [80],
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#40ff66",
-    "statusBar.background": "#333333",
-    "statusBar.noFolderBackground": "#333333",
-    "statusBar.debuggingBackground": "#263238"
-  },
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "window.zoomLevel": -1,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "editor.fontLigatures": false,
-  "editor.indentSize": "tabSize",
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
-  "eslint.format.enable": true,
-  "tabnine.experimentalAutoImports": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#333333",
+    "activityBarBadge.background": "#FF4500",
+    "statusBar.background": "#333333",
+    "statusBar.foreground": "#FFFFFF",
+    "titleBar.activeForeground": "#FFFFFF",
+
+    "editorBracketHighlight.foreground1": "#D3D3D3", 
+    "editorBracketHighlight.foreground2": "#D3D3D3",
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+     "source.fixAll.eslint": "explicit"
+   },
+   "editor.tabSize": 2
 }
 ```
 3. Install the following plugins:
