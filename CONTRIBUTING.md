@@ -17,7 +17,8 @@ Thank you for considering contributing to our repository! Your participation hel
 
 1. Download and install [VSCode](https://code.visualstudio.com/Download).
 2. Create a `.vscode/settings.json` file in the root of your project and
-include this configuration
+   include this configuration
+
 ```json
 {
   "workbench.iconTheme": "material-icon-theme",
@@ -37,16 +38,28 @@ include this configuration
     "statusBar.foreground": "#FFFFFF",
     "titleBar.activeForeground": "#FFFFFF",
 
-    "editorBracketHighlight.foreground1": "#D3D3D3", 
-    "editorBracketHighlight.foreground2": "#D3D3D3",
+    "editorBracketHighlight.foreground1": "#D3D3D3",
+    "editorBracketHighlight.foreground2": "#D3D3D3"
   },
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.codeActionsOnSave": {
-     "source.fixAll.eslint": "explicit"
-   },
-   "editor.tabSize": 2
+
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.tabSize": 2
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.tabSize": 2
+  }
 }
 ```
+
 3. Install the following plugins:
    - [Markdown](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -88,9 +101,9 @@ include this configuration
    - Follow the coding style guidelines.
    - Include tests for your changes if applicable.
    - Ensure your code passes all existing tests and does not introduce new
-   issues.
+     issues.
    - Submit a pull request and provide a clear description of the changes. More
-   details [here](#how-to-make-a-commit).
+     details [here](#how-to-make-a-commit).
 
 3. Code of Conduct
 
@@ -103,10 +116,10 @@ There are many ways to contribute, including but not limited to:
 
 - **Reporting Bugs:** If you find a bug, please let us know by opening an issue.
 - **Suggesting Features:** Have an idea for a new feature? We'd love to hear
-about it.
+  about it.
 - **Writing Code:** Submit pull requests to fix bugs or add new features.
 - **Improving Documentation:** Help us make our documentation clearer and more
-comprehensive.
+  comprehensive.
 - **Testing:** Test the project on different platforms and report any issues.
 
 ## Development requirements
@@ -115,16 +128,16 @@ The development considered to be included in the project's codebase, should
 comply with the following criteria:
 
 1. **Do not push a commit if the development is not completed**. Each commit is
-expected to be associated to a single ticket number, it means that
-**only one commit is allowed per ticket assigned.** (if you need to update your
-branch with the latest changes from the main branch, please perform a rebase)
+   expected to be associated to a single ticket number, it means that
+   **only one commit is allowed per ticket assigned.** (if you need to update your
+   branch with the latest changes from the main branch, please perform a rebase)
 2. **Each commit must deliver a stable version of the app.**
 3. The commit must state the title of the task/subtask that was taken,
-**_e.g MDC-000 This is the title of the task_**
+   **_e.g MDC-000 This is the title of the task_**
 4. Add a description providing the answers to the following questions:
    - How the development in the branch will add value to the project?
    - (Optional) Is there any remaining work to be done? Please, provide the
-   ticket number that will cover this development.
+     ticket number that will cover this development.
 
 ### _**EXCEPTIONS:**_
 
