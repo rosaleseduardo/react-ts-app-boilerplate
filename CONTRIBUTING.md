@@ -9,6 +9,7 @@ Thank you for considering contributing to our repository! Your participation hel
 - [How You Can Help](#how-you-can-help)
 - [Development requirements](#development-requirements)
 - [How to make a commit](#how-to-make-a-commit)
+- [Process to raise a PR](#process-to-raise-a-pr)
 - [References](#references)
 
 <br/>
@@ -26,10 +27,10 @@ Thank you for considering contributing to our repository! Your participation hel
   "editor.minimap.enabled": true,
   "workbench.statusBar.visible": true,
   "editor.formatOnSave": true,
-  "editor.rulers": [80],
+  "editor.rulers": [120],
   "window.zoomLevel": -1,
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 80,
+  "editor.wordWrapColumn": 120,
   "editor.guides.bracketPairs": true,
   "workbench.colorCustomizations": {
     "activityBar.background": "#333333",
@@ -65,7 +66,7 @@ Thank you for considering contributing to our repository! Your participation hel
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 4. Install [pnpm](https://pnpm.io/installation) globally in your machine.
-5. Execute `pnpm run install-deps:clean` to install all dependencies. (Read [this reference](https://betterprogramming.pub/npm-ci-vs-npm-install-which-should-you-use-in-your-node-js-projects-51e07cb71e26) for more details)
+5. Execute `pnpm run ci` to install all dependencies. (Read [this reference](https://betterprogramming.pub/npm-ci-vs-npm-install-which-should-you-use-in-your-node-js-projects-51e07cb71e26) for more details)
 6. Execute `pnpm run dev` to start the app.
 
 ## Development Tooling
@@ -162,6 +163,10 @@ Make usage of the command `pnpm run commit:changes` to make a new commit. This w
    - If no, proceed to the next step.
 7. The commit will be added to the git history.
 8. Push the previously created commit to the remote repository.
+
+## Process to raise a PR
+
+TO DO
 
 ## References
 
