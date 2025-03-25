@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import type { ReactElement } from 'react';
 
 import reactLogo from './assets/react.svg';
 
 import './App.css';
 
-const App = (): JSX.Element => {
+const App = (): ReactElement => {
   const [count, setCount] = useState(0);
 
   return (
@@ -31,9 +32,7 @@ const App = (): JSX.Element => {
           Edit <code>src/App.tsx</code>
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
   );
 };

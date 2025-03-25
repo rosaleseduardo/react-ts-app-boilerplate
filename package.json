@@ -18,11 +18,10 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint . --report-unused-disable-directives",
+    "lint": "eslint --ext ts,tsx --report-unused-disable-directives --max-warnings=0",
     "commit:changes": "git add -A && cz",
     "pre-commit": "npm run test:prod && npm run lint",
-    "install-deps:clean": "pnpm install --frozen-lockfile",
-    "install-deps": "pnpm install"
+    "ci": "pnpm install --frozen-lockfile"
   },
   "dependencies": {
     "react": "19.0.0",

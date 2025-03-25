@@ -31,7 +31,7 @@ import pluginJs from '@eslint/js';
  */
 export default [
   { files: ['**/*.{ts,tsx}'] },
-  { ignores: ['coverage', 'eslint.config.js', 'vite.config.ts'] },
+  { ignores: ['coverage', 'eslint.config.js', 'dist'] },
   { 
     languageOptions: {
       parser: parserTs,
@@ -41,16 +41,14 @@ export default [
         project: './tsconfig.eslint.json',
       },
       globals: {
-        React: true,
-        JSX: true,
         ...globals.browser,
-        it: 'readonly',
-        expect: 'readonly',
+        ...globals.jest,
+        React: true
       },
     },
     settings: {
       react: {
-        version: '18.3.1',
+        version: '19.0.0',
       },
     },
   },
@@ -72,7 +70,8 @@ export default [
       ...pluginReactHooks.configs.recommended.rules,
       ...pluginImport.configs.recommended.rules,
       ...pluginTs.configs.recommended.rules,
-      'react/react-in-jsx-scope': 'off',
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
       'no-irregular-whitespace': 'off',
       'simple-import-sort/imports': [
         'error',
@@ -89,7 +88,8 @@ export default [
           ],
         },
       ],
-      'max-len': ['error', { code: 80 }],
+      'react-hooks/exhaustive-deps': 'off',
+      'max-len': ['error', { code: 120 }],
       'import/no-unresolved': 'off',
       'import/namespace': 'off',
       'import/export': 'off',
@@ -106,7 +106,7 @@ export default [
           semi: true,
           tabWidth: 2,
           arrowParens: 'avoid',
-          printWidth: 80,
+          printWidth: 120,
           traillingComma: 'all',
         },
       ],
