@@ -42,6 +42,9 @@ Thank you for considering contributing to our repository! Your participation hel
     "editorBracketHighlight.foreground1": "#D3D3D3",
     "editorBracketHighlight.foreground2": "#D3D3D3"
   },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
 
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
@@ -57,6 +60,16 @@ Thank you for considering contributing to our repository! Your participation hel
       "source.fixAll.eslint": "explicit"
     },
     "editor.tabSize": 2
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
   }
 }
 ```
