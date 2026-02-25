@@ -4,7 +4,9 @@
   "editor.minimap.enabled": true,
   "workbench.statusBar.visible": true,
   "editor.formatOnSave": true,
-  "editor.rulers": [120],
+  "editor.rulers": [
+    120
+  ],
   "window.zoomLevel": -1,
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
@@ -15,14 +17,12 @@
     "statusBar.background": "#333333",
     "statusBar.foreground": "#FFFFFF",
     "titleBar.activeForeground": "#FFFFFF",
-
     "editorBracketHighlight.foreground1": "#D3D3D3",
     "editorBracketHighlight.foreground2": "#D3D3D3"
   },
   "files.associations": {
     "*.css": "tailwindcss"
   },
-
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
@@ -30,7 +30,6 @@
     },
     "editor.tabSize": 2
   },
-
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
@@ -38,7 +37,6 @@
     },
     "editor.tabSize": 2
   },
-
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4,
